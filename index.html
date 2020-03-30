@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>拖拽建站</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-4.2.1.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/font-awesome.4.7.0.css">
+    <!-- Google fonts - Poppins-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600">
+    <!-- Lightbox-->
+    <link rel="stylesheet" href="vendor/lightbox2/css/lightbox.css">
+    <!-- Custom font icons-->
+    <link rel="stylesheet" href="css/fontastic.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<body>
+<!-- 导航栏-->
+<header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <img src="img/drag.svg" alt="" class="img-fluid">
+            <img src="img/dragisall.png" alt="" class="img-fluid">
+
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">Menu<i class="fa fa-bars ml-2"></i></button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <!-- Link-->
+                    <li class="nav-item"> <a href="index.html" class="nav-link active">主页</a></li>
+                    <!-- Link-->
+                    <li class="nav-item"> <a href="mb.html" class="nav-link">模版</a></li>
+                    <!-- Link-->
+                    <li class="nav-item"> <a href="text.html" class="nav-link">使用文档</a></li>
+                    <!-- Link-->
+                    <li class="nav-item"> <a href="contact.html" class="nav-link">联系我们</a></li>
+                </ul>
+                <a href="#" data-toggle="modal" data-target="#login" class="btn btn-primary navbar-btn ml-0 ml-lg-3">登陆/注册</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- 登陆模块-->
+<div id="login" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade bd-example-modal-lg">
+    <div role="document" class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body p-4 p-lg-5">
+                <form action="#" class="login-form text-left">
+                    <div class="form-group mb-4">
+                        <label>用户名/手机号/邮箱</label>
+                        <input type="email" name="email" placeholder="请填写其中之一" class="form-control">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label>密码</label>
+                        <input type="password" name="password" placeholder="请填写密码" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="登陆" class="btn btn-primary" onclick="loginTest()">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--轮播图-->
+<section>
+    <div class="index-top">
+        <div class="m-carousel slideBox">
+            <div class="bd">
+                <ul class="m-carousel-list">
+
+                    <li style="background-image: url(img/slider1.jpg);">
+                        <a href="#" data-toggle="modal" data-target="#login">
+                            <h2 class="c-line-clamp m-carousel-title">让您事半功N倍的建站工具</h2>
+                            <p class="c-line-clamp m-carousel-note">将传统的编码工作转化为直观的拖拽操作和文字录入</p>
+                            <p class="m-carousel-btn">马上开始</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<!-- 优点-->
+<section>
+    <div class="container">
+        <div class="text-center">
+            <h2>选择我们？</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <p class="lead text-muted mt-2">同自助，何不同</p>
+                </div>
+            </div>
+        </div>
+        <div class="integrations mt-5">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="box text-center">
+                        <div class="icon d-flex align-items-end"><img src="img/monitor.svg" alt="..." class="img-fluid"></div>
+                        <h3 class="h4">只需拖拽</h3>
+                        <p class="text-small font-weight-light">Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box text-center">
+                        <div class="icon d-flex align-items-end"><img src="img/target.svg" alt="..." class="img-fluid"></div>
+                        <h3 class="h4">一键生成</h3>
+                        <p class="text-small font-weight-light">Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box text-center">
+                        <div class="icon d-flex align-items-end"><img src="img/chat.svg" alt="..." class="img-fluid"></div>
+                        <h3 class="h4">SEO优化</h3>
+                        <p class="text-small font-weight-light">Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box text-center">
+                        <div class="icon d-flex align-items-end"><img src="img/idea.svg" alt="..." class="img-fluid"></div>
+                        <h3 class="h4">免费代码</h3>
+                        <p class="text-small font-weight-light">Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box text-center">
+                        <div class="icon d-flex align-items-end"><img src="img/coffee-cup.svg" alt="..." class="img-fluid"></div>
+                        <h3 class="h4">响应式</h3>
+                        <p class="text-small font-weight-light">Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box text-center">
+                        <div class="icon d-flex align-items-end"><img src="img/pen.svg" alt="..." class="img-fluid"></div>
+                        <h3 class="h4">免费域名提供</h3>
+                        <p class="text-small font-weight-light">Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 模版-->
+<section>
+    <div class="container">
+        <div class="text-center">
+            <h2>使用模版，立刻生成 </h2>
+            <p class="lead text-muted mt-2">数以千计的现成模版供您使用</p><a href="mb.html" class="btn btn-primary">马上体验</a>
+        </div>
+        <div class="row">
+            <div class="col-lg-7 mx-auto mt-5"><img src="img/illustration-1.svg" alt="..." class="intro-image img-fluid"></div>
+        </div>
+    </div>
+</section>
+<!-- 产品文档-->
+<section class="bg-primary text-white">
+    <div class="container">
+        <div class="text-center">
+            <h2>点击这里，学习如何开始</h2>
+            <div class="row">
+                <div class="col-lg-9 mx-auto">
+                    <p class="lead text-white mt-2">视频结合文字，更快更好的让您使用我们的产品。</p>
+                </div>
+            </div><a href="text.html" class="btn btn-outline-light">查看使用文档</a>
+        </div>
+    </div>
+</section>
+<!-- 作品集-->
+<section class="pb-0">
+    <div class="container">
+        <div class="text-center">
+            <h2>作品集</h2>
+            <p class="lead text-muted mt-2">他们也在使用</p>
+        </div>
+        <div class="portfolio mt-5">
+            <div class="row">
+                <div class="col-lg-4 p-0"><a href="img/portfolio-1.jpg" data-lightbox="image-1" data-title="Some footer information" class="portfolio-item"><img src="img/portfolio-1.jpg" alt="image" class="img-fluid"></a></div>
+                <div class="col-lg-4 p-0"><a href="img/portfolio-2.jpg" data-lightbox="image-1" data-title="Some footer information" class="portfolio-item"><img src="img/portfolio-2.jpg" alt="image" class="img-fluid"></a></div>
+                <div class="col-lg-4 p-0"><a href="img/portfolio-3.jpg" data-lightbox="image-1" data-title="Some footer information" class="portfolio-item"><img src="img/portfolio-3.jpg" alt="image" class="img-fluid"></a></div>
+                <div class="col-lg-4 p-0"><a href="img/portfolio-4.jpg" data-lightbox="image-1" data-title="Some footer information" class="portfolio-item"><img src="img/portfolio-4.jpg" alt="image" class="img-fluid"></a></div>
+                <div class="col-lg-4 p-0"><a href="img/portfolio-5.jpg" data-lightbox="image-1" data-title="Some footer information" class="portfolio-item"><img src="img/portfolio-5.jpg" alt="image" class="img-fluid"></a></div>
+                <div class="col-lg-4 p-0"><a href="img/portfolio-6.jpg" data-lightbox="image-1" data-title="Some footer information" class="portfolio-item"><img src="img/portfolio-6.jpg" alt="image" class="img-fluid"></a></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 兼容性支持-->
+<section class="bg-gray">
+    <div class="container">
+        <div class="text-center">
+            <h2>兼容性支持</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <p class="lead text-muted mt-2">支持firefox,google,IE,safari等浏览器的内核 </p>
+                </div>
+            </div>
+        </div>
+        <div class="clients mt-5">
+            <div class="row">
+                <div class="col-lg-2"><img src="img/client-1.svg" alt="" class="client-image img-fluid"></div>
+                <div class="col-lg-2"><img src="img/client-2.svg" alt="" class="client-image img-fluid"></div>
+                <div class="col-lg-2"><img src="img/client-3.svg" alt="" class="client-image img-fluid"></div>
+                <div class="col-lg-2"><img src="img/client-4.svg" alt="" class="client-image img-fluid"></div>
+                <div class="col-lg-2"><img src="img/client-5.svg" alt="" class="client-image img-fluid"></div>
+                <div class="col-lg-2"><img src="img/client-6.svg" alt="" class="client-image img-fluid"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 mb-5 mb-lg-0">
+                <div class="footer-logo"><img src="img/logo-footer.svg" alt="..." class="img-fluid"></div>
+            </div>
+            <div class="col-lg-3 mb-5 mb-lg-0">
+                <h5 class="footer-heading">网站页面</h5>
+                <ul class="list-unstyled">
+                    <li> <a href="index.html" class="footer-link">主页</a></li>
+                    <li> <a href="mb.html" class="footer-link">模版</a></li>
+                    <li> <a href="text.html" class="footer-link">使用文档</a></li>
+                    <li> <a href="contact.html" class="footer-link">与我们联系</a></li>
+
+                </ul>
+            </div>
+            <div class="col-lg-3 mb-5 mb-lg-0">
+                <h5 class="footer-heading">Product</h5>
+                <ul class="list-unstyled">
+                    <li> <a href="#" class="footer-link">Why Appton?</a></li>
+                    <li> <a href="#" class="footer-link">Enterprise</a></li>
+                    <li> <a href="#" class="footer-link">Blog</a></li>
+                    <li> <a href="#" class="footer-link">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h5 class="footer-heading">Resources</h5>
+                <ul class="list-unstyled">
+                    <li> <a href="#" class="footer-link">Download</a></li>
+                    <li> <a href="#" class="footer-link">Help Center</a></li>
+                    <li> <a href="#" class="footer-link">Guides</a></li>
+                    <li> <a href="#" class="footer-link">Partners</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left">
+                    <p class="copyrights-text mb-3 mb-lg-0">Copyright &copy; 2019.Company name All rights reserved.</p>
+
+
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <ul class="list-inline social mb-0">
+                        <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook"></i></a><a href="#" class="social-link"><i class="fa fa-twitter"></i></a><a href="#" class="social-link"><i class="fa fa-youtube-play"></i></a><a href="#" class="social-link"><i class="fa fa-vimeo"></i></a><a href="#" class="social-link"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- JavaScript files-->
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="https://www.jq22.com/jquery/bootstrap-4.2.1.js"></script>
+<script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+<script src="vendor/lightbox2/js/lightbox.min.js"></script>
+<script src="js/front.js"></script>
+</body>
+</html>
