@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.0.js"></script>
+
+</head>
+<body>
+<input type="text" name="name" id="target" class="required input-xlarge" value="{$erc_address['erc_address']}" readonly ="" >
+ <input type="button" name="" data-clipboard-action="copy" data-clipboard-target="#target" id="copy_btn"value="复制地址" style="margin-bottom: 10px;">
+<script>
+    $(document).ready(function(){
+        var targetText=$("#target").text();
+        var clipboard = new Clipboard('#copy_btn');
+        clipboard.on('success', function(e) {
+            // console.info('Action:', e.action);
+            // console.info('Text:', e.text);
+            // console.info('Trigger:', e.trigger);
+            // alert("复制成功");
+            alert('复制成功');
+            e.clearSelection();
+        });
+    });
+</script>
+</body>
+
+
+
+
+

@@ -63,8 +63,8 @@
             <div class="modal-body p-4 p-lg-5">
                 <form action="#" class="login-form text-left">
                     <div class="form-group mb-4">
-                        <label>用户名/手机号/邮箱</label>
-                        <input type="email" name="email" placeholder="请填写其中之一" class="form-control">
+                        <label>用户名/邮箱</label>
+                        <input type="text" name="email" placeholder="请填写其中之一" class="form-control">
                     </div>
                     <div class="form-group mb-4">
                         <label>密码</label>
@@ -72,12 +72,42 @@
                     </div>
                     <div class="form-group">
                         <input type="submit" value="登陆" class="btn btn-primary" onclick="loginTest()">
+                        <input type="submit" value="注册" class="btn btn-primary" onclick="register()">
+                        <a href="">忘记密码</a>
                     </div>
+                </form>
+            </div>
+            <!--注册 先隐藏-->
+            <div class="modal-body p-4 p-lg-5 register" style="display: none">
+                <form action="#" class="login-form text-left">
+                    <div class="form-group mb-4">
+                        <label>邮箱</label>
+                        <input type="email" name="email" placeholder="请填写您的邮箱" class="form-control">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label>用户名</label>
+                        <input type="text" name="name" placeholder="请填写用户名" class="form-control userName">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label>密码</label>
+                        <input type="password" name="password" placeholder="请填写密码" class="form-control pwdFir">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label>请在输入一次密码</label>
+                        <input type="password" name="password" placeholder="请再次输入您的密码" class="form-control pwdSec">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="注册（直接登陆）" class="btn btn-primary" onclick="loginAfterRegister()">
+                        </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
+
+
+
+
 <!--轮播图-->
 <section>
     <div class="index-top">
@@ -285,6 +315,7 @@
 <script src="https://www.jq22.com/jquery/bootstrap-4.2.1.js"></script>
 <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
 <script src="vendor/lightbox2/js/lightbox.min.js"></script>
+<script src="js/util.js"></script>
 <script src="js/front.js"></script>
 </body>
 </html>

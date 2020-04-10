@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>drag-left</title>
+    <script src="http://code.jquery.com/jquery-2.1.0.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <STYLE>
+        .container{
+            width: 100%;
+        }
+        .main{
+            width: 100%;
+            display: flex;
+            flex-direction:row;
+            justify-content:center;
+            /*横向上对齐*/
+            align-items:center;
+            height: 600px;
+        }
+        .edit{
+            height: 600px;
+            width: 25%;
+            border: 1px solid black;
+        }
+        .compo{
+            width: 25%;
+            border: 1px solid black;
+            height: 100%;
+        }
+        .gain{
+            flex: 1;
+            border: 1px solid pink;
+            height: 100%;
+        }
+        .draggable.cloneEle{
+            position: absolute;
+        }
+        .draggable:nth-child(2n){
+             top: 40px;
+         }
+        .draggable{
+            position: fixed;
+            border: 1px solid green;
+            padding: 2px;
+            text-align: center;
+            font-family: Albany, Georgia, "Times New Roman", serif;
+            width: 200px;
+            left: 10px;
+            top: 10px;
+        }
+        .disNone{
+            display: none;
+        }
+    </STYLE>
+</head>
+<body>
+<div class="container">
+    <!--<header>-->
+        <!--<input type="button" class="save">-->
+    <!--</header>-->
+    <div class="main">
+        <!--左边组件区域-->
+        <div class="compo">
+           <div class="input_form"></div>
+        </div>
+        <!--中间设计区域-->
+        <div class ="gain"></div>
+        <!--右边编辑区-->
+        <div class="edit"></div>
+    </div>
+</div>
+
+<script src="js/drag-container.js"></script>
+</body>
+</html>
