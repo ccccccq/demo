@@ -7,52 +7,66 @@
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <STYLE>
+        *{
+            margin: 0px;
+            border:0px;
+        }
         .container{
             width: 100%;
         }
         .main{
             width: 100%;
             display: flex;
-            flex-direction:row;
-            justify-content:center;
-            /*横向上对齐*/
-            align-items:center;
-            height: 600px;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
         }
         .edit{
             height: 600px;
             width: 25%;
             border: 1px solid black;
         }
-        .compo{
+        .compo {
             width: 25%;
             border: 1px solid black;
-            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            height: 600px;
         }
         .gain{
             flex: 1;
             border: 1px solid pink;
-            height: 100%;
         }
         .draggable.cloneEle{
             position: absolute;
         }
-        .draggable:nth-child(2n){
-             top: 40px;
-         }
         .draggable{
-            position: fixed;
             border: 1px solid green;
             padding: 2px;
             text-align: center;
             font-family: Albany, Georgia, "Times New Roman", serif;
-            width: 200px;
-            left: 10px;
-            top: 10px;
         }
         .disNone{
             display: none;
         }
+        .compo ul{
+            width: 15%;
+            height: 100%;
+            border: 1px solid black;
+        }
+
+        .compo ul li{
+            border: 1px solid black;
+            width: 100%;
+            height: 25px;
+            text-align: center;
+        }
+        .compo >div >div{
+            height: 5px;
+            width: 10px;
+            border: 1px solid pink;
+        }
+
     </STYLE>
 </head>
 <body>
@@ -63,7 +77,8 @@
     <div class="main">
         <!--左边组件区域-->
         <div class="compo">
-           <div class="input_form"></div>
+            <ul></ul>
+            <div></div>
         </div>
         <!--中间设计区域-->
         <div class ="gain"></div>
@@ -71,7 +86,6 @@
         <div class="edit"></div>
     </div>
 </div>
-
 <script src="js/drag-container.js"></script>
 </body>
 </html>

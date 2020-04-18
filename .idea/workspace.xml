@@ -7,17 +7,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0aff3eb5-2b38-4ce4-9093-243611f81a83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/create.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drag-left.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/drag-container.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/lg.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drag-left.html" beforeDir="false" afterPath="$PROJECT_DIR$/drag-left.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/drag-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/drag-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jquery.cookie/component.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jquery.cookie/component.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jquery.cookie/cookie.jquery.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jquery.cookie/cookie.jquery.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jquery.cookie/jquery.cookie.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jquery.cookie/jquery.cookie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jquery/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jquery/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lightbox2/css/lightbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/lightbox2/css/lightbox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lightbox2/css/lightbox.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/lightbox2/css/lightbox.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lightbox2/images/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/lightbox2/images/close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lightbox2/images/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/lightbox2/images/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lightbox2/images/next.png" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/lightbox2/images/next.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lightbox2/images/prev.png" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/lightbox2/images/prev.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lightbox2/js/lightbox-plus-jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/lightbox2/js/lightbox-plus-jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lightbox2/js/lightbox.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/lightbox2/js/lightbox.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/popper.js/esm/popper-utils.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/popper.js/esm/popper-utils.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/popper.js/esm/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/popper.js/esm/popper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/popper.js/popper-utils.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/popper.js/popper-utils.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/popper.js/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/popper.js/popper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/popper.js/umd/popper-utils.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/popper.js/umd/popper-utils.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/popper.js/umd/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/popper.js/umd/popper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/popper.js/umd/poppper.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/popper.js/umd/poppper.js.flow" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,21 +44,23 @@
     <session id="-1913105131">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="17" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.6" value="7" />
           <entry key="project.open.time.7" value="4" />
-          <entry key="project.open.time.8" value="3" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.open.time.8" value="4" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="12" />
-          <entry key="html" value="28" />
+          <entry key="html" value="35" />
           <entry key="iml" value="2" />
           <entry key="jpg" value="2" />
-          <entry key="js" value="13" />
+          <entry key="js" value="20" />
           <entry key="png" value="9" />
           <entry key="rnc" value="1" />
           <entry key="svg" value="4" />
@@ -55,10 +71,10 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="12" />
-          <entry key="HTML" value="28" />
+          <entry key="HTML" value="35" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="Image" value="11" />
-          <entry key="JavaScript" value="13" />
+          <entry key="JavaScript" value="20" />
           <entry key="RNG Compact" value="1" />
           <entry key="SVG" value="4" />
           <entry key="TypeScript" value="2" />
@@ -68,16 +84,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="512" />
-          <entry key="html" value="3871" />
-          <entry key="js" value="6913" />
+          <entry key="html" value="4646" />
+          <entry key="js" value="10654" />
           <entry key="vue" value="124" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="512" />
-          <entry key="HTML" value="3871" />
-          <entry key="JavaScript" value="6913" />
+          <entry key="HTML" value="4646" />
+          <entry key="JavaScript" value="10654" />
           <entry key="Vue.js" value="124" />
         </counts>
       </usages-collector>
@@ -88,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drag-left.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="70" column="24" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="24" />
+            <state relative-caret-position="156">
+              <caret line="42" column="18" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -97,8 +113,31 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/drag-container.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="136" column="22" lean-forward="true" selection-start-line="136" selection-start-column="22" selection-end-line="136" selection-end-column="22" />
+            <state relative-caret-position="183">
+              <caret line="116" column="38" lean-forward="true" selection-start-line="116" selection-start-column="38" selection-end-line="116" selection-end-column="38" />
+              <folding>
+                <element signature="e#442#450#0" />
+                <element signature="e#2607#2616#0" />
+                <element signature="n#!!block;n#getCode#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jQueryDtNav/js/LiftEffect.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="87" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jQueryDtNav/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1245">
+              <caret line="83" column="30" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -109,26 +148,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>moveX</find>
-      <find>list-style</find>
-      <find>event</find>
-      <find>button</find>
-      <find>node</find>
-      <find>layer</find>
-      <find>left</find>
-      <find>whichOne</find>
-      <find>page</find>
-      <find>initObjX</find>
-      <find>console</find>
-      <find>objXnew</find>
-      <find>x</find>
       <find>$(&quot;.design&quot;).offset().top$(&quot;.design&quot;).offset().top</find>
       <find>input_form</find>
       <find>displ</find>
@@ -137,7 +163,6 @@
       <find>container</find>
       <find>drag</find>
       <find>design</find>
-      <find>desTop</find>
       <find>display</find>
       <find>cloneEle</find>
       <find>name</find>
@@ -146,6 +171,20 @@
       <find>undoEle</find>
       <find>edit</find>
       <find>种类</find>
+      <find>desTop</find>
+      <find>x</find>
+      <find>comp_class</find>
+      <find>comps</find>
+      <find>comp_codes</find>
+      <find>LiftEffect</find>
+      <find>comp_lists</find>
+      <find>flex</find>
+      <find>Selected</find>
+      <find>addEdit</find>
+      <find>initMouseY</find>
+      <find>getCode</find>
+      <find>dragDiv</find>
+      <find>initMouseX</find>
     </findStrings>
     <replaceStrings>
       <replace>0, 0, 0, 0.5</replace>
@@ -182,12 +221,14 @@
         <option value="$PROJECT_DIR$/create.html" />
         <option value="$PROJECT_DIR$/js/drag.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/1.html" />
         <option value="$USER_HOME$/Downloads/drag-container(1).js" />
         <option value="$PROJECT_DIR$/drag.html" />
-        <option value="$PROJECT_DIR$/drag-left.html" />
-        <option value="$PROJECT_DIR$/edit.html" />
         <option value="$PROJECT_DIR$/js/edit.js" />
+        <option value="$PROJECT_DIR$/jqueryzdybiaodan/index.html" />
+        <option value="$PROJECT_DIR$/edit.html" />
+        <option value="$PROJECT_DIR$/jQueryDtNav/js/LiftEffect.js" />
+        <option value="$PROJECT_DIR$/drag-left.html" />
+        <option value="$PROJECT_DIR$/1.html" />
         <option value="$PROJECT_DIR$/js/drag-container.js" />
       </list>
     </option>
@@ -212,9 +253,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="318" />
     <option name="y" value="23" />
     <option name="width" value="1414" />
-    <option name="height" value="870" />
+    <option name="height" value="815" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -222,9 +264,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -235,7 +274,18 @@
             <path>
               <item name="demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="jQueryDtNav" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="jQueryDtNav" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="jqueryzdybiaodan" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="demo" type="b2602c69:ProjectViewProjectNode" />
@@ -251,6 +301,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -258,7 +311,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/chenqi/demo/drag-left.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586532696490" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587039939629" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -268,16 +321,16 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/js" />
-      <recent name="$PROJECT_DIR$/new" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/new/js" />
       <recent name="$PROJECT_DIR$/new" />
       <recent name="$PROJECT_DIR$/new/css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$/new" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -303,7 +356,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_demo" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_demo_2" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -311,7 +364,7 @@
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="55048" />
+        <option name="DEBUG_PORT" value="55158" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -364,6 +417,69 @@
         </option>
       </method>
     </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 6.0.44" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_demo" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55158" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -386,18 +502,24 @@
       <workItem from="1586069282674" duration="8671000" />
       <workItem from="1586238757639" duration="7453000" />
       <workItem from="1586250460703" duration="15023000" />
-      <workItem from="1586505256865" duration="13594000" />
+      <workItem from="1586505256865" duration="14037000" />
+      <workItem from="1586591006333" duration="7100000" />
+      <workItem from="1586840138339" duration="897000" />
+      <workItem from="1586944673658" duration="1025000" />
+      <workItem from="1587016178576" duration="16371000" />
+      <workItem from="1587112559390" duration="5005000" />
+      <workItem from="1587179863487" duration="6954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80980000" />
+    <option name="totallyTimeSpent" value="118775000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1414" height="870" extended-state="0" />
+    <frame x="318" y="23" width="1414" height="815" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20991254" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22740525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -406,7 +528,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.030261349" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3299363" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35408023" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -415,7 +537,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.3299363" />
+      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32904884" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -428,7 +550,7 @@
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32943293" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23196721" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22157435" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -436,8 +558,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3299363" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.030261349" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35408023" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -446,7 +568,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.3299363" />
+      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32904884" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -456,7 +578,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.3295082" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32943293" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,13 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/drag-container(1).js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -588,12 +703,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/drag.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drag.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/js/drag.js" />
+    <entry file="file://$PROJECT_DIR$/drag.html" />
     <entry file="file://$PROJECT_DIR$/login.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -621,31 +732,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/edit.js">
+    <entry file="file://$PROJECT_DIR$/js/edit.js" />
+    <entry file="file://$USER_HOME$/my-project/api/category/controllers/category.js" />
+    <entry file="file://$USER_HOME$/my-project/api/category/models/category.js" />
+    <entry file="file://$USER_HOME$/my-project/api/category/services/category.js" />
+    <entry file="file://$PROJECT_DIR$/edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="315">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jqueryzdybiaodan/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="68" column="37" lean-forward="true" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQueryDtNav/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQueryDtNav/js/LiftEffect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="87" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQueryDtNav/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="83" column="30" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="49" column="27" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/drag-left.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="70" column="24" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        <state relative-caret-position="156">
+          <caret line="42" column="18" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/drag-container.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="136" column="22" lean-forward="true" selection-start-line="136" selection-start-column="22" selection-end-line="136" selection-end-column="22" />
+        <state relative-caret-position="183">
+          <caret line="116" column="38" lean-forward="true" selection-start-line="116" selection-start-column="38" selection-end-line="116" selection-end-column="38" />
+          <folding>
+            <element signature="e#442#450#0" />
+            <element signature="e#2607#2616#0" />
+            <element signature="n#!!block;n#getCode#0" />
+          </folding>
         </state>
       </provider>
     </entry>
