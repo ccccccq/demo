@@ -36,15 +36,16 @@
         .gain{
             flex: 1;
             border: 1px solid pink;
+            height: 600px;
         }
         .draggable.cloneEle{
             position: absolute;
         }
         .draggable{
-            border: 1px solid green;
             padding: 2px;
-            text-align: center;
+            /*text-alsign: center;*/
             font-family: Albany, Georgia, "Times New Roman", serif;
+            /*border: 1px solid black;*/
         }
         .disNone{
             display: none;
@@ -61,19 +62,44 @@
             height: 25px;
             text-align: center;
         }
-        .compo >div >div{
-            height: 5px;
-            width: 10px;
-            border: 1px solid pink;
+        .compo div{
+            width: 85%;
         }
-
+        .compo div .showBox{
+            width: 100%;
+        }
+        .compo div .showBox div{
+            width: 100%;
+            margin: 10px;
+        }
+        .p .h1 {
+            display: block;
+        }
+        input{
+            border: 1px solid blue;
+        }
+        header ul li {
+            display: inline-block;
+            margin-left: 50px;
+        }
+        /*header ul li:nth-child(3){*/
+            /*right: 0px;*/
+        /*}*/
     </STYLE>
 </head>
 <body>
 <div class="container">
-    <!--<header>-->
+    <header>
+
+            <ul>
+                <li><img src="img/lastPage.png"></li>
+                <li>2</li>
+                <li>3</li>
+                <li><img src="img/head.png"></li>
+            </ul>
+
         <!--<input type="button" class="save">-->
-    <!--</header>-->
+    </header>
     <div class="main">
         <!--左边组件区域-->
         <div class="compo">
@@ -83,7 +109,7 @@
         <!--中间设计区域-->
         <div class ="gain"></div>
         <!--右边编辑区-->
-        <div class="edit"></div>
+        <div class="edit"><div class='edit-container'></div>
     </div>
 </div>
 <script src="js/drag-container.js"></script>

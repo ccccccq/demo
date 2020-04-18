@@ -632,12 +632,12 @@ STYLE SWITCHER FOR DEMO
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  .btn {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
+/*@media screen and (prefers-reduced-motion: reduce) {*/
+  /*.btn {*/
+    /*-webkit-transition: none;*/
+    /*transition: none;*/
+  /*}*/
+/*}*/
 
 .btn:focus, .btn.focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 0,, 0.25);
