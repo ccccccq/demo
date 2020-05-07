@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-2.1.0.js"></script>
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    var data = {
+        web_extIp: 1111
+    }
+    $.ajax("http://localhost:8080/web-infos",data,function(data){
+        //返回的数据
+        alert("您的网页已经暂时保存成功");
+    });
+
+</script>
+</body>
+</html>

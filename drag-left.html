@@ -5,113 +5,86 @@
     <title>drag-left</title>
     <script src="http://code.jquery.com/jquery-2.1.0.js"></script>
     <script src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
     <link rel="stylesheet" href="css/style.css">
-    <STYLE>
-        *{
-            margin: 0px;
-            border:0px;
-        }
-        .container{
-            width: 100%;
-        }
-        .main{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: flex-start;
-        }
-        .edit{
-            height: 600px;
-            width: 25%;
-            border: 1px solid black;
-        }
-        .compo {
-            width: 25%;
-            border: 1px solid black;
-            display: flex;
-            flex-wrap: wrap;
-            height: 600px;
-        }
-        .gain{
-            flex: 1;
-            border: 1px solid pink;
-            height: 600px;
-        }
-        .draggable.cloneEle{
-            position: absolute;
-        }
-        .draggable{
-            padding: 2px;
-            /*text-alsign: center;*/
-            font-family: Albany, Georgia, "Times New Roman", serif;
-            /*border: 1px solid black;*/
-        }
-        .disNone{
-            display: none;
-        }
-        .compo ul{
-            width: 15%;
-            height: 100%;
-            border: 1px solid black;
-        }
-
-        .compo ul li{
-            border: 1px solid black;
-            width: 100%;
-            height: 25px;
-            text-align: center;
-        }
-        .compo div{
-            width: 85%;
-        }
-        .compo div .showBox{
-            width: 100%;
-        }
-        .compo div .showBox div{
-            width: 100%;
-            margin: 10px;
-        }
-        .p .h1 {
-            display: block;
-        }
-        input{
-            border: 1px solid blue;
-        }
-        header ul li {
-            display: inline-block;
-            margin-left: 50px;
-        }
-        /*header ul li:nth-child(3){*/
-            /*right: 0px;*/
-        /*}*/
-    </STYLE>
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/editcss.css">
 </head>
 <body>
+<header>
+    <ul>
+        <li class="lastPage"><svg t="1588833968065" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2130" width="24" height="24"><path d="M475.591111 300.373333V175.217778c-11.377778-52.337778-54.613333-20.48-54.613333-20.48L120.604444 411.875556c-65.991111 45.511111-4.551111 79.644444-4.551111 79.644444l295.822223 254.862222c59.164444 43.235556 63.715556-22.755556 63.715555-22.755555v-116.053334C775.964444 514.275556 898.844444 887.466667 898.844444 887.466667c11.377778 20.48 18.204444 0 18.204445 0 116.053333-559.786667-441.457778-587.093333-441.457778-587.093334z" fill="#ffffff" p-id="2131"></path></svg></li>
+        <li class="save"><svg t="1588834147386" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5028" width="24" height="24"><path d="M886.63 278.63L745.37 137.37c-6-6-14.14-9.37-22.63-9.37H160c-17.67 0-32 14.33-32 32v704c0 17.67 14.33 32 32 32h704c17.67 0 32-14.33 32-32V301.25c0-8.48-3.37-16.62-9.37-22.62zM544 192v64c0 17.67 14.33 32 32 32s32-14.33 32-32v-64h32v192H384V192h160zM320 832V576h384v256H320z m512 0h-64V572.55c0-33.39-27.16-60.55-60.55-60.55h-390.9c-33.39 0-60.55 27.16-60.55 60.55V832h-64V192h128v228.96c0 14.94 12.11 27.04 27.04 27.04h329.91c14.94 0 27.04-12.11 27.04-27.04V192h5.49L832 314.51V832z" p-id="5029" fill="#ffffff"></path></svg></li>
+        <li class="nullall"><svg t="1588837987474" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2135" width="24" height="24"><path d="M694.857143 146.285714 694.857143 73.142857c0-40.393143-32.749714-73.142857-73.142857-73.142857L402.285714 0c-40.393143 0-73.142857 32.749714-73.142857 73.142857l0 73.142857L36.571429 146.285714l0 73.142857 109.714286 0 0 731.428571c0 40.393143 32.749714 73.142857 73.142857 73.142857l585.142857 0c40.393143 0 73.142857-32.749714 73.142857-73.142857L877.714286 219.428571l109.714286 0L987.428571 146.285714 694.857143 146.285714zM402.285714 73.142857l219.428571 0 0 73.142857L402.285714 146.285714 402.285714 73.142857zM804.571429 950.857143 219.428571 950.857143 219.428571 219.428571l585.142857 0L804.571429 950.857143z" p-id="2136" fill="#ffffff"></path><path d="M329.142857 329.142857l73.142857 0 0 512-73.142857 0 0-512Z" p-id="2137" fill="#ffffff"></path><path d="M475.428571 329.142857l73.142857 0 0 512-73.142857 0 0-512Z" p-id="2138" fill="#ffffff"></path><path d="M621.714286 329.142857l73.142857 0 0 512-73.142857 0 0-512Z" p-id="2139" fill="#ffffff"></path></svg></li>
+        <li class="createCode"><svg t="1588834307220" class="icon " viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9621" width="24" height="24"><path d="M819.2 819.2v-68.266667h68.266667c40.96 0 68.266667-27.306667 68.266666-68.266666V136.533333c0-40.96-27.306667-68.266667-68.266666-68.266666H341.333333c-40.96 0-68.266667 27.306667-68.266666 68.266666v68.266667H204.8V136.533333c0-75.093333 61.44-136.533333 136.533333-136.533333h546.133334c75.093333 0 136.533333 61.44 136.533333 136.533333v546.133334c0 75.093333-61.44 136.533333-136.533333 136.533333h-68.266667z" p-id="9622" fill="#ffffff"></path><path d="M136.533333 204.8h546.133334c75.093333 0 136.533333 61.44 136.533333 136.533333v546.133334c0 75.093333-61.44 136.533333-136.533333 136.533333H136.533333c-75.093333 0-136.533333-61.44-136.533333-136.533333V341.333333c0-75.093333 61.44-136.533333 136.533333-136.533333z m0 68.266667c-40.96 0-68.266667 27.306667-68.266666 68.266666v546.133334c0 40.96 27.306667 68.266667 68.266666 68.266666h546.133334c40.96 0 68.266667-27.306667 68.266666-68.266666V341.333333c0-40.96-27.306667-68.266667-68.266666-68.266666H136.533333z" p-id="9623" fill="#ffffff"></path><path d="M238.933333 477.866667h341.333334c20.48 0 34.133333 13.653333 34.133333 34.133333s-13.653333 34.133333-34.133333 34.133333h-341.333334c-20.48 0-34.133333-13.653333-34.133333-34.133333s13.653333-34.133333 34.133333-34.133333zM238.933333 682.666667h341.333334c20.48 0 34.133333 13.653333 34.133333 34.133333s-13.653333 34.133333-34.133333 34.133333h-341.333334c-20.48 0-34.133333-13.653333-34.133333-34.133333s13.653333-34.133333 34.133333-34.133333z" p-id="9624" fill="#ffffff"></path></svg></li>
+        <a href="javascript:;" class="md-trigger btn  " data-modal="modal-1"><li class="finalCreate"><svg t="1588834392506" class="icon marginspe" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10507" width="24" height="24" style="margin-top: -10px"><path d="M512 1024A512 512 0 1 1 512 0a512 512 0 0 1 0 1024z m0-82.285714a429.714286 429.714286 0 1 0 0-859.428572 429.714286 429.714286 0 0 0 0 859.428572zM438.345143 604.891429l263.533714-272.384a41.179429 41.179429 0 0 1 59.099429 57.270857l-292.571429 302.445714a41.106286 41.106286 0 0 1-58.660571 0.438857l-146.285715-146.285714a41.106286 41.106286 0 1 1 58.221715-58.148572L438.345143 604.891429z" p-id="10508" fill="#ffffff"></path></svg></li></a>
+        <div class="md-modal md-effect" id="modal-1">
+            <div class="md-content">
+                <h3>最后一步</h3>
+                <div>
+                    <p>请输入网页名称(最长12个字)</p>
+                    <input type="text" class="pagename" style="width: 300px;height:30px;">
+                    <p>请输入网页的关键词，空格隔开，以便于大家能够更好的搜索到您的网页（最多5个关键词）</p>
+                    <input type="text" class="keywords" style="width: 470px;height:30px;">
+                    <input type="button" class="confirm-keywords" value="确认" >
+                    <p><strong>您的域名是（域名末尾是您的用户名，仅支持数字及字母）:</strong></p>
+                    <input type="text" class="domain" readonly>
+                    <button class="md-close btn-sm btn-primary">关闭</button>
+                </div>
+            </div>
+        </div>
+        <div class="md-overlay"></div>
+        <li class="headPortrait"><svg t="1588834468719" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="13093" width="28" height="28"><path d="M390.69933 577.807798c0 51.591005-15.161305 93.460602-33.888831 93.460602-18.678408 0-33.865295-41.87062-33.865295-93.460602 0-51.619658 15.186887-93.460602 33.865295-93.460602C375.538025 484.347197 390.69933 526.18814 390.69933 577.807798z" p-id="13094" fill="#ffffff"></path><path d="M708.435904 577.807798c0 51.591005-15.161305 93.460602-33.863249 93.460602-18.705014 0-33.891901-41.87062-33.891901-93.460602 0-51.619658 15.186887-93.460602 33.891901-93.460602C693.275623 484.347197 708.435904 526.18814 708.435904 577.807798z" p-id="13095" fill="#ffffff"></path><path d="M514.536776 124.557854c-212.911134 0-385.494795 172.557054-385.494795 385.494795 0 212.885552 172.58366 385.491725 385.494795 385.491725 212.885552 0 385.491725-172.607196 385.491725-385.491725C900.029524 297.114908 727.422328 124.557854 514.536776 124.557854zM514.536776 851.160513c-188.411137 0-341.109911-152.72231-341.109911-341.107865 0-37.764092 6.362918-74.015737 17.701151-107.983363 28.735461-45.306882 74.9142-86.86744 146.771785-81.326237 0 0 53.696969 203.136513 273.200242 130.765229 0 0-93.408413-32.712029-39.71349-114.422006 0 0 125.761262 177.6347 279.024901 115.420753 3.208065 18.755156 5.233188 37.893029 5.233188 57.546647C855.644641 698.438203 702.922331 851.160513 514.536776 851.160513z" p-id="13096" fill="#ffffff"></path></svg></li>
+    </ul>
+</header>
 <div class="container">
-    <header>
 
-            <ul>
-                <li><img src="img/lastPage.png"></li>
-                <li>2</li>
-                <li>3</li>
-                <li><img src="img/head.png"></li>
-            </ul>
-
-        <!--<input type="button" class="save">-->
-    </header>
     <div class="main">
         <!--左边组件区域-->
         <div class="compo">
-            <ul></ul>
+            <ul><p style="font-family: Arial;    text-align: center;"><strong>组件区</strong></p></ul>
             <div></div>
         </div>
         <!--中间设计区域-->
-        <div class ="gain"></div>
+        <div class ="gain" ></div>
         <!--右边编辑区-->
-        <div class="edit"><div class='edit-container'></div>
+        <div class="edit">
+            <div class='edit-container'>
+                <p style="font-family: Arial;    text-align: center;"><strong>编辑区</strong></p>
+                <!--文字编辑区-->
+                <div class="edit-text" style ="display: none">
+                    <div>字体内容：<input type = 'text' class='edit-text-value' placeholder='请输入文本'></div>
+                    <div>字体大小：<input type = 'text' class='edit-text-size' placeholder='请输入文本大小'></div>
+                    <div>字体颜色：<input type = 'text' class='edit-text-color' placeholder='请输入rgb格式颜色'></div>
+                    <div>字体样式：<input type = 'text' class='edit-text-fontstyle' placeholder='请输入你想要的字体样式'></div>
+                    <div>字体：<input type = 'text' class='edit-text-fontfamily' placeholder='输入字体'></div>
+                    <div>字体粗细：
+                    <input type = 'button' class="weight-lighter edit-text-fontweight"   value="更细"><input type = 'button' class="weight-normol edit-text-fontweight" checked="checked" value="正常"><input type = 'button' class="weight-bolder edit-text-fontweight" value="更粗">
+                    </div>
+                    <div class="edit-text-eventContainer">事件设置：
+                        <input type="button" class="edit-text-eventadd" value="添加事件">
+                        <form class="edit-text-eventlistener">
+                            <select  name="event">
+                            <option value="click" selected >点击事件</option>
+                            <option value="hover">覆盖事件</option>
+                            </select>
+
+                            <div class="edit-text-event">
+                                <input type = 'text' class='edit-text-clickhref'  placeholder='输入页面跳转链接'>
+                                <input type = 'text' class='edit-text-hover-color' style="display: none;" placeholder='输入rgb格式颜色'>
+
+                            </div>
+                         </form>
+                    </div>
+                </div>
+                <!--表单编辑区-->
+                <div class="input-form" style ="display: none"></div>
+             </div>
+        </div>
     </div>
+    <script src="js/drag-container.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/modalEffects.js"></script>
 </div>
-<script src="js/drag-container.js"></script>
 </body>
 </html>

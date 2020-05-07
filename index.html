@@ -19,10 +19,8 @@
     <link rel="stylesheet" href="css/fontastic.css">
     <!-- theme stylesheet-->
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
     <!-- Favicon-->
-    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="img/drag.svg">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -32,10 +30,7 @@
 <!-- 导航栏-->
 <header class="header">
     <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <img src="img/drag.svg" alt="" class="img-fluid">
-            <img src="img/dragisall.png" alt="" class="img-fluid">
-
+        <div class="container"  style="margin-right: 0px">
             <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">Menu<i class="fa fa-bars ml-2"></i></button>
             <div id="navbarSupportedContent" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
@@ -48,7 +43,7 @@
                     <!-- Link-->
                     <li class="nav-item"> <a href="contact.html" class="nav-link">联系我们</a></li>
                 </ul>
-                <a href="#" data-toggle="modal" data-target="#login" class="btn btn-primary navbar-btn ml-0 ml-lg-3">登陆/注册</a>
+                <a href="#" data-toggle="modal" data-target="#login" class="btn btn-primary navbar-btn ml-0 ml-lg-3" style="font-family: 'Buenard', serif;">登陆/注册</a>
             </div>
         </div>
     </nav>
@@ -71,8 +66,8 @@
                         <input type="password" name="password" placeholder="请填写密码" class="form-control">
                     </div>
                     <div class="form-group">
-                        <input type="submit" value="登陆" class="btn btn-primary" onclick="loginTest()">
-                        <input type="submit" value="注册" class="btn btn-primary" onclick="register()">
+                        <input type="button" value="登陆" class="btn btn-primary" onclick="loginTest()">
+                        <input type="button" value="注册" class="btn btn-primary" onclick="register()">
                         <a href="">忘记密码</a>
                     </div>
                 </form>
@@ -115,11 +110,12 @@
             <div class="bd">
                 <ul class="m-carousel-list">
 
-                    <li style="background-image: url(img/slider1.jpg);">
+                    <li>
                         <a href="#" data-toggle="modal" data-target="#login">
-                            <h2 class="c-line-clamp m-carousel-title">让您事半功N倍的建站工具</h2>
+                            <h2 class="c-line-clamp m-carousel-title">"所见即所得"</h2>
                             <p class="c-line-clamp m-carousel-note">将传统的编码工作转化为直观的拖拽操作和文字录入</p>
-                            <p class="m-carousel-btn">马上开始</p>
+
+                            <p class="m-carousel-btn">即刻体验</p>
                         </a>
                     </li>
                 </ul>
@@ -145,42 +141,43 @@
                     <div class="box text-center">
                         <div class="icon d-flex align-items-end"><img src="img/monitor.svg" alt="..." class="img-fluid"></div>
                         <h3 class="h4">只需拖拽</h3>
-                        <p class="text-small font-weight-light">Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                        <p class="text-small font-weight-light">从最左列拖拽您需要的组件到创造区。</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="box text-center">
                         <div class="icon d-flex align-items-end"><img src="img/target.svg" alt="..." class="img-fluid"></div>
                         <h3 class="h4">一键生成</h3>
-                        <p class="text-small font-weight-light">Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                        <p class="text-small font-weight-light">点击生成按钮，一键生成属于您的网站。</p>
                     </div>
+
                 </div>
                 <div class="col-lg-4">
                     <div class="box text-center">
                         <div class="icon d-flex align-items-end"><img src="img/chat.svg" alt="..." class="img-fluid"></div>
                         <h3 class="h4">SEO优化</h3>
-                        <p class="text-small font-weight-light">Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                        <p class="text-small font-weight-light">可选择您网站的关键词，更好的让浏览器搜索到您的网站。</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="box text-center">
                         <div class="icon d-flex align-items-end"><img src="img/idea.svg" alt="..." class="img-fluid"></div>
                         <h3 class="h4">免费代码</h3>
-                        <p class="text-small font-weight-light">Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                        <p class="text-small font-weight-light">免费且方便的复制您的代码。</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="box text-center">
                         <div class="icon d-flex align-items-end"><img src="img/coffee-cup.svg" alt="..." class="img-fluid"></div>
                         <h3 class="h4">响应式</h3>
-                        <p class="text-small font-weight-light">Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                        <p class="text-small font-weight-light">面对不同分辨率设备灵活性强。</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="box text-center">
                         <div class="icon d-flex align-items-end"><img src="img/pen.svg" alt="..." class="img-fluid"></div>
                         <h3 class="h4">免费域名提供</h3>
-                        <p class="text-small font-weight-light">Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                        <p class="text-small font-weight-light">简单使用足以。</p>
                     </div>
                 </div>
             </div>
@@ -261,34 +258,27 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 mb-5 mb-lg-0">
-                <div class="footer-logo"><img src="img/logo-footer.svg" alt="..." class="img-fluid"></div>
+                <div class="footer-logo">
+                    <p>Drag all</p>
+                    <svg t="1588832331224" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2384" width="48" height="48"><path d="M574.958 267.016h-63.454 204.649L511.213 63.655 307.85 267.016h141.191V456.68H258.688v125.917H449.04V772.95h125.917V582.596h188.875V456.679H574.958V267.016z m-63.704 693.33l189.62-187.396H323.126l188.129 187.395zM71.292 518.891l187.395 189.62v-377.75L71.292 518.892z m692.54-188.13v377.75L952.708 518.89 763.833 330.762z" p-id="2385" fill="#ffffff"></path></svg></div>
             </div>
             <div class="col-lg-3 mb-5 mb-lg-0">
                 <h5 class="footer-heading">网站页面</h5>
                 <ul class="list-unstyled">
                     <li> <a href="index.html" class="footer-link">主页</a></li>
-                    <li> <a href="mb.html" class="footer-link">模版</a></li>
-                    <li> <a href="text.html" class="footer-link">使用文档</a></li>
-                    <li> <a href="contact.html" class="footer-link">与我们联系</a></li>
+                    <li> <a href="mb.html" class="footer-link">查看模版</a></li>
+                    <li> <a href="text.html" class="footer-link">用户登陆</a></li>
+                    <li> <a href="contact.html" class="footer-link">使用文档</a></li>
 
                 </ul>
             </div>
             <div class="col-lg-3 mb-5 mb-lg-0">
-                <h5 class="footer-heading">Product</h5>
+                <h5 class="footer-heading">与我们联系</h5>
                 <ul class="list-unstyled">
-                    <li> <a href="#" class="footer-link">Why Appton?</a></li>
-                    <li> <a href="#" class="footer-link">Enterprise</a></li>
-                    <li> <a href="#" class="footer-link">Blog</a></li>
-                    <li> <a href="#" class="footer-link">Pricing</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3">
-                <h5 class="footer-heading">Resources</h5>
-                <ul class="list-unstyled">
-                    <li> <a href="#" class="footer-link">Download</a></li>
-                    <li> <a href="#" class="footer-link">Help Center</a></li>
-                    <li> <a href="#" class="footer-link">Guides</a></li>
-                    <li> <a href="#" class="footer-link">Partners</a></li>
+                    <li> <a href="#" class="footer-link">QQ: 1059731879</a></li>
+                    <li> <a href="#" class="footer-link">email:321313@qq.com</a></li>
+                    <li> <a href="#" class="footer-link">组件贡献请联系：cccq@git</a></li>
+
                 </ul>
             </div>
         </div>
@@ -297,7 +287,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-left">
-                    <p class="copyrights-text mb-3 mb-lg-0">Copyright &copy; 2019.Company name All rights reserved.</p>
+                    <p class="copyrights-text mb-3 mb-lg-0">Copyright &copy; 2020.Company name All rights reserved.</p>
 
 
                 </div>

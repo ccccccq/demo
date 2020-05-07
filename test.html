@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="http://code.jquery.com/jquery-2.1.0.js"></script>
+
+</head>
+
+<body>
+<span id="daima">11111</span>
+<input type="button" id="Copy" value="点击复制代码" />
+</body>
+
+</html>
+
+<script type="text/javascript">
+    $("#Copy").click(function() {
+        var ssrsss = $("#daima").text();//获取文本
+        var flag = copyText(ssrsss); //传递文本
+        alert(flag ? "复制成功！" : "复制失败！");
+    })
+    function copyText(text) {
+        var textarea = document.createElement("input");//创建input对象
+        var currentFocus = document.activeElement;//当前获得焦点的元素
+        document.body.appendChild(textarea);//添加元素
+        textarea.value = text;
+        textarea.focus();
+        if(textarea.setSelectionRange)
+            textarea.setSelectionRange(0, textarea.value.length);//获取光标起始位置到结束位置
+        else
+            textarea.select();
+        try {
+            var flag = document.execCommand("copy");//执行复制
+        } catch(eo) {
+            var flag = false;
+        }
+        document.body.removeChild(textarea);//删除元素
+        currentFocus.focus();
+        return flag;
+    }
+  </script>
+</body>
+</html>

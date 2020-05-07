@@ -5,7 +5,7 @@ function loginTest(){
     var pwd = $("input.form-control")[1].value;
     if(emailCheck(account) || phoneCheck(account)) {
         //把邮箱手机号传给后端，后段返回用户编号
-    location.href="create.html?"+"useId="+encodeURI(useId);
+    this.location.href="http://localhost:63342/demo/drag-left.html?"+"useId="+encodeURI(useId);
     }
     else{
         alert("请输入正确格式的邮箱/手机号");

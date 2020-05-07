@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    border:0px;
+
+}
+
+.container{
+    width: 100%;
+    padding: 0px;
+}
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.edit{
+    height: 600px;
+    width: 22%;
+}
+.compo {
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+}
+.gain{
+    flex: 1;
+    border: 1px solid #aaa;
+    height: 600px;
+    overflow:scroll;
+}
+.draggable.cloneEle{
+    position: absolute;
+}
+.draggable{
+    padding: 2px;
+    /*text-alsign: center;*/
+}
+.disNone{
+    display: none;
+}
+.compo ul{
+    width: 20%;
+    height: 100%;
+    list-style: disc;
+    border-right: 1px solid #aaa;
+}
+
+.compo ul li{
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    color: #aaa;
+    margin-top: 3px;
+}
+.compo ul li:hover{
+    cursor: pointer;
+    color: black;
+}
+.compo div{
+    width: 80%;
+}
+.compo div .showBox{
+    width: 100%;
+}
+.compo div .showBox div{
+    margin: auto;
+}
+.p .h1 {
+    display: block;
+}
+
+header ul li {
+    display: inline-block;
+
+}
+header ul{
+    width: 100%;
+    background-color: #090723;
+
+    padding: 8px 4px 0px 4px;
+
+}
+img{
+    display: inline-block;
+    width: 17px;
+}
+.lastPage{
+    float: left;
+    margin-left: 20px;
+}
+.headPortrait{
+    float: right;
+    margin-right: 30px;
+}
+.edit-event{
+    display: inline-block;
+}
+.edit-text div{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.edit-text-fontweight  {
+    width: 41px;
+    height: 26px;
+}
+.edit-text-event{
+    display: inline-block;
+}
+li.save {
+    margin-left: 60%;
+}
+.confirm-vitalwords{
+    margin-top: 10px;
+    font-style: normal;
+    margin-left: 200px;
+    width: 50px;
+    height: 30px;
+}
+input.confirm-keywords {
+    margin: 10px 190px;
+    padding: 5px 10px;
+}
+input.domain {
+    width: 300px;
+    height: 30px;
+}
+li.createCode {
+    margin-left: 10px;
+}
+
+svg.icon:hover {
+    cursor: pointer;
+}
+.radio{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.input_form.showBox div{
+    height: 16px;
+}
+.edit-input-date.draggable{
+   line-height:inherit;
+}
+hr{
+    margin-top: 13px;
+    margin-bottom: 17px;
+}
+.edit-input-checkbox.draggable{
+    margin-left: 0px !important;
+}

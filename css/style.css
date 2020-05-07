@@ -180,10 +180,10 @@ ol, ul {
     width: 218px;
     height: 40px;
     line-height: 40px;
-    background: -webkit-linear-gradient(right, #36e4ff, #5bbdff);
-    background: linear-gradient(-90deg, #36e4ff, #5bbdff);
+    background-color: #fff;
     border-radius: 4px;
-    margin-top: 32px
+    margin-top: 32px;
+    color: black
 }
 .c-carousel-dot {
     position: absolute;
@@ -273,4 +273,8 @@ body{
     position: absolute;
     top: 0px;
     width: 100%;
+}
+
+a.nav-link{
+    font-family: 'Buenard', serif;
 }
