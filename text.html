@@ -47,7 +47,6 @@
         </div>
       </nav>
     </header>
-    <!-- Login Modal-->
     <div id="login" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade bd-example-modal-lg">
       <div role="document" class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
@@ -57,113 +56,77 @@
           <div class="modal-body p-4 p-lg-5">
             <form action="#" class="login-form text-left">
               <div class="form-group mb-4">
-                <label>Email address</label>
-                <input type="email" name="email" placeholder="name@company.com" class="form-control">
+                <label>用户名/邮箱</label>
+                <input type="text" name="email" placeholder="请填写其中之一" class="form-control">
               </div>
               <div class="form-group mb-4">
-                <label>Password</label>
-                <input type="password" name="password" placeholder="Min 8 characters" class="form-control">
+                <label>密码</label>
+                <input type="password" name="password" placeholder="请填写密码" class="form-control">
               </div>
               <div class="form-group">
-                <input type="submit" value="Login" class="btn btn-primary">
+                <input type="button" value="登陆" class="btn btn-primary" onclick="loginTest()">
+                <input type="button" value="注册" class="btn btn-primary" onclick="register()">
+                <a href="">忘记密码</a>
+              </div>
+            </form>
+          </div>
+          <!--注册 先隐藏-->
+          <div class="modal-body p-4 p-lg-5 register" style="display: none">
+            <form action="#" class="login-form text-left">
+              <div class="form-group mb-4">
+                <label>邮箱</label>
+                <input type="email" name="email" placeholder="请填写您的邮箱" class="form-control">
+              </div>
+              <div class="form-group mb-4">
+                <label>用户名</label>
+                <input type="text" name="name" placeholder="请填写用户名" class="form-control userName">
+              </div>
+              <div class="form-group mb-4">
+                <label>密码</label>
+                <input type="password" name="password" placeholder="请填写密码" class="form-control pwdFir">
+              </div>
+              <div class="form-group mb-4">
+                <label>请在输入一次密码</label>
+                <input type="password" name="password" placeholder="请再次输入您的密码" class="form-control pwdSec">
+              </div>
+              <div class="form-group">
+                <input type="submit" value="注册（直接登陆）" class="btn btn-primary" onclick="loginAfterRegister()">
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-    <!-- Hero Section-->
-    <section class="hero">
-      <div class="container text-center">
-        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html" class="animsition-link">Home</a></li>
-            <li aria-current="page" class="breadcrumb-item active">Text page </li>
-          </ol>
-        </nav>
-        <h1>Text page</h1>
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <p class="lead text-muted">This is the lead paragraph of the article. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <section>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <p class="lead text-muted mb-5"><strong>Pellentesque habitant </strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae </code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.  <a href="#">Donec non enim  </a> in turpis pulvinar facilisis. Ut felis.</p>
-            <h2 class="mb-3">Header Level 2</h2>
-            <ol class="mb-5 text-left">
-              <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-              <li>Aliquam tincidunt mauris eu risus.</li>
-            </ol>
-            <blockquote class="blockquote mb-5 text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</blockquote>
-            <h3 class="mb-5">Header Level 3</h3>
-            <p class="mb-5">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-            <ul class="mb-4 text-left">
-              <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-              <li>Aliquam tincidunt mauris eu risus.</li>
+            <h2 class="mb-3">入门必看</h2>
+            <ul class="mb-5 text-left">
+              <li>花上3-5分钟阅读一下以下入门指南却是个不错的主意，这样可以使您系统地了解网站的常用功能，减少自己摸索的时间。</li>
             </ul>
-            <p><img src="img/blog1.jpg" alt="..." class="img-fluid"></p>
-            <p class="mt-5">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+            <blockquote class="blockquote mb-5 text-left">当您注册登录系统之后，系统会将您自动带到网站创造的面板，在这里，您可以很方便的管理您的网站。如果是第一次登录系统，您的帐户下自然是没有网站的。接着，您可以直接在编辑去拖拽组件"来体验一下我们的功能。如果您想快一些、好一点的制作出一个网站，窍门就是选择一个适合您的行业或者需求的同类型模板。我们的模板不仅提供了全球最精美最有创意的布局，还配备了行业相关的图片、文字和内容，您选择一个图文内容贴切的模板，将会大大提高建站的效率。</blockquote>
+            <h3 class="mb-5">开始编辑</h3>
+            <p class="mb-5">选择合适的模板后，您只需点击下方界面，系统会将它导入并创建到您的账户下，
+              等创建完成后，您便可以开始编辑网站内容了。</p>
+            <p><img src="img/login2.png"  class="img-fluid"></p>
+
+            <p class="mb-5">如果您想修改某个内容， 只需将鼠标移动到该内容区块上，鼠标右键支持复制、粘贴、删除、撤回功能。在编辑区域有每种组件对应的编辑列表，您可直接通过它对元素进行修改。您可以用这个方法插入绝大多数的常用页面元素。例如：文本、标题、幻灯片，图片，列表、按钮、地图等等。</p>
+
+            <p><img src="img/dragmenu.png"  class="img-fluid"></p>
+            <h3 class="mb-5">进行保存</h3>
+            <ul class="mb-4 text-left">
+              <li>以下四个分别是保存、清空、复制代码、生成网站。</li>
+              <p><img src="img/savelist.png"  class="img-fluid" style="margin-left: 140px;"></p>
+              <li>在这里输入您的网站名称和关键字，即可点击生成网站。您的域名会展示在下方。</li>
+              <p><img src="img/last-step.png"  class="img-fluid"></p>
+            </ul>
+            <p class="mt-5">现在，您对常用的功能应该有了一个基本的了解。还不快点创建一个网站试试吗？如果您在创建网站的时候遇到任何问题，都可以拨打我们的客服电话或通过QQ联系到我们。当然，我们还准备了很多教程，您也可以通过阅读教程获得答案。 最后，祝您使用愉快！</p>
           </div>
         </div>
       </div>
     </section>
-    <footer class="main-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 mb-5 mb-lg-0">
-            <div class="footer-logo"></div>
-          </div>
-          <div class="col-lg-3 mb-5 mb-lg-0">
-            <h5 class="footer-heading">Site pages</h5>
-            <ul class="list-unstyled">
-              <li> <a href="index.html" class="footer-link">Home</a></li>
-              <li> <a href="mb.html" class="footer-link">FAQ</a></li>
-              <li> <a href="contact.html" class="footer-link">Contact</a></li>
-              <li> <a href="text.html" class="footer-link">Text Page</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 mb-5 mb-lg-0">
-            <h5 class="footer-heading">Product</h5>
-            <ul class="list-unstyled">
-              <li> <a href="#" class="footer-link">Why Appton?</a></li>
-              <li> <a href="#" class="footer-link">Enterprise</a></li>
-              <li> <a href="#" class="footer-link">Blog</a></li>
-              <li> <a href="#" class="footer-link">Pricing</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3">
-            <h5 class="footer-heading">Resources</h5>
-            <ul class="list-unstyled">
-              <li> <a href="#" class="footer-link">Download</a></li>
-              <li> <a href="#" class="footer-link">Help Center</a></li>
-              <li> <a href="#" class="footer-link">Guides</a></li>
-              <li> <a href="#" class="footer-link">Partners</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="copyrights">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 text-center text-lg-left">
-              <p class="copyrights-text mb-3 mb-lg-0">Copyright &copy; 2019.Company name All rights reserved.</p>
-
-
-            </div>
-            <div class="col-lg-6 text-center text-lg-right">
-              <ul class="list-inline social mb-0">
-                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook"></i></a><a href="#" class="social-link"><i class="fa fa-twitter"></i></a><a href="#" class="social-link"><i class="fa fa-youtube-play"></i></a><a href="#" class="social-link"><i class="fa fa-vimeo"></i></a><a href="#" class="social-link"><i class="fa fa-pinterest"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
     <!-- JavaScript files-->
     <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script><script src="https://www.jq22.com/jquery/bootstrap-4.2.1.js"></script>
     <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>

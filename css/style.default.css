@@ -248,26 +248,9 @@ STYLE SWITCHER FOR DEMO
   height: 50px;
 }
 
-/* =====================================================
-*     HERO SECTION
-* =====================================================
-*/
-.hero {
-  padding: 12.5rem 0;
-  background-size: cover;
-  background-position: bottom left;
-}
 
 
 
-
-/* HERO MEDIAQUERY */
-@media (max-width: 991.98px) {
-  .hero {
-    padding: 5rem 0 7rem;
-    padding-top: 8rem;
-  }
-}
 
 /*
 * =====================================================
